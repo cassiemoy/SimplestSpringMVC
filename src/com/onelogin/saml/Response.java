@@ -45,7 +45,7 @@ public class Response {
 	private String currentUrl;
 
 	public Response(AccountSettings accountSettings) throws CertificateException {
-		this.accountSettings = accountSettings;		
+		this.accountSettings = accountSettings;	
 		certificate = new Certificate();
 		certificate.loadCertificate(this.accountSettings.getCertificate());
 	}
